@@ -23,7 +23,7 @@ def xmas(filename="data/day9.dat", preamble_size=25):
     return False
 
 
-def encryption_weakness_xmas(filename="data/day9.dat", preamble_size=25, result=26796446):
+def encryption_weakness_xmas(filename="data/day9.dat", result=26796446):
     with open(filename) as fdata:
         lines = [int(l) for l in fdata.read().splitlines()]
     for i, line in enumerate(lines):
@@ -37,7 +37,7 @@ def encryption_weakness_xmas(filename="data/day9.dat", preamble_size=25, result=
 
 
 assert xmas("data/day9-t.dat", 5) == 127
-assert encryption_weakness_xmas("data/day9-t.dat", 5, 127) == 62
+assert encryption_weakness_xmas("data/day9-t.dat", 127) == 62
 
-xmas()  #  26796446
+xmas()  # 26796446
 encryption_weakness_xmas()  # 3353494
