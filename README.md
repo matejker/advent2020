@@ -44,7 +44,7 @@ x = - a_1 (mod busID_1) <=> x + a_i = 0 (mod busID_1)
   .
 x = - a_n (mod busID_n) <=> x + a_i = 0 (mod busID_n)  
 ```
-Thefore the search by sieving: 
+Therefore the search by sieving: 
 ```python
 multiple = x = buslines[0][1]
 for t, bus in buslines[1:]:
