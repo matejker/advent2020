@@ -12,7 +12,7 @@ The algorithm is itself isn't that interesting. More interesting seems to be def
 a stable state of in GoL terminology into _still life_. One would say, you can find a _still life_ and then apply 
 inverse rules on it and after n rounds you have a _game_ which will converge back to the original still life.
 Open questions:
- - How can you generate game such that will converge into still life?
+ - How can you generate game such that it will converge into a still life?
 
 Even though my original algorithm was writen in Python, I rewrite it into JavaScript and visualise it. 
 Here is a live demo for my puzzle: [Part 1](https://matejker.github.io/game-of-life/aoc.html), 
