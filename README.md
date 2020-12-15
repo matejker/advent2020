@@ -1,6 +1,6 @@
 # Advent of Code 2020
-My first attempt with AoC, only ambition is to solve both problems a day.
-Furthermore I picked up a few nice problems and their solutions and theory. 
+My first attempt with AoC, my only ambition is to solve both problems everyday.
+Furthermore, I picked up a few nice problems and their solutions and theory. 
 
 ## Day 11 - Game of "Seats"
 The theme for [day 11 was the _Seating System_](https://adventofcode.com/2020/day/11) which was a nice adaptation of _Cellular Automata_ or it's most famous
