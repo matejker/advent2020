@@ -29,7 +29,7 @@ x = a_1 (mod m_1)
   .
 x = a_n (mod m_n)
 ```
-then there exist unique solution for `x` modulo `M = m_1...m_n`. The solution is
+then there exist unique solution for `x` modulo `M = m_1...m_n`. The solution is  
 ![](https://user-images.githubusercontent.com/45606539/102273203-e003a680-3f19-11eb-8f87-a881c0445c3d.png)  
 where `b_i = M / m_i` and `b'_i = b_i^-1 (mod m_i)` [4, 5].
 
@@ -69,7 +69,7 @@ it and test it. Obviously, the `a(n) > n` for a first few `n` as (in my case) th
 but asymptotically it _should_ be bellow `n`.
 ![](https://user-images.githubusercontent.com/45606539/102198900-d9921200-3eba-11eb-8078-93d4c61ccb8e.png) 
 Open questions:
- - Is what is the slope of _Van Eck's sequence_ defined by `1, 2, 16, 19, 18, 0`? Is it different than the original one?
+ - What is the slope of the _Van Eck's sequence_ defined by `1, 2, 16, 19, 18, 0`? Is it different than the original one?
 
 ## References
 [1] Eric Wastl (2020), _Advent of Code 2020_, https://adventofcode.com/2020  
