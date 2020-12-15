@@ -4,7 +4,7 @@ Furthermore I picked up a few nice problems and their solutions and theory.
 
 ## Day 11 - Game of "Seats"
 The theme for [day 11 was the _Seating System_](https://adventofcode.com/2020/day/11) which was a nice adaptation of _Cellular Automata_ or it's most famous
-variation - _the Game of Life_. (I am playing with [some more adaptations with GoL here](https://github.com/matejker/game-of-life))
+variation - _the Game of Life_. (I am playing with some adaptations with GoL [here](https://github.com/matejker/game-of-life))
 
 > Simulate your seating area by applying the seating rules repeatedly until no seats change state [1]
 
