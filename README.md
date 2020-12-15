@@ -14,6 +14,10 @@ inverse rules on it and after n rounds you have a _game_ which will converge bac
 Open questions:
  - How can you generate game such that will converge into still life?
 
+Even though my original algorithm was writen in Python, I rewrite it into JavaScript and visualise it. 
+Here is a live demo for my puzzle: [Part 1](https://matejker.github.io/game-of-life/aoc.html), 
+[Part 2](https://matejker.github.io/game-of-life/aoc.html)
+
 ## Day 13 - Chinese Reminder Theorem
 Mathematically most interesting problem was [day 13 - _Shuttle Search_](https://adventofcode.com/2020/day/13). 
 The solution and idea leads into the _Chinese Reminder Theorem_.
