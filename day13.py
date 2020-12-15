@@ -18,7 +18,7 @@ def get_lcm(input_data=INPUT):
     multiple = max(i + l for i, l in buslines)
 
     while True:
-        reminders = [multiple % l == i for i, l in buslines]
+        reminders = [(multiple + i) % l == 0 for i, l in buslines]
         if all(reminders):
             return multiple
         multiple += 1
@@ -30,10 +30,11 @@ def get_lcm2(input_data=INPUT):
     # Some loong forgotten algebra _Chinese reminder theorem_
     # https://crypto.stanford.edu/pbc/notes/numbertheory/crt.html
     buslines = [(i, int(line)) for i, line in enumerate(input_data[1].split(",")) if line != "x"]
+    buslines.sort(key=lambda tup: -tup[1])  # This method is faster if the moduli have been ordered by decreasing value
 
     multiple = x = buslines[0][1]
-    for i, bus in buslines[1:]:
-        while (x + i) % bus != 0:
+    for t, bus in buslines[1:]:
+        while (x + t) % bus:
             x += multiple
         multiple *= bus
     return x
