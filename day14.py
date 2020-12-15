@@ -33,6 +33,7 @@ def docking_data(filename="data/day14.dat"):
 def make_mask(base, holders, alt):
     return int(base + sum(2 ** n for n, a in zip(holders, alt) if a))
 
+
 def possible_variations(filename="data/day14.dat"):
     with open(filename) as fdata:
         lines = fdata.read().splitlines()
