@@ -69,40 +69,24 @@ def get_count(lines):
     return count
 
 
-def game_of_seats(filename="data/day11.dat"):
+def game_of_seats(filename="data/day11.dat", func=None, tolerance=None):
     with open(filename) as fdata:
         lines = [convert2list(l) for l in fdata.read().splitlines()]
 
     match = False
-    pervioius_game = deepcopy(lines)
+    previous_game = deepcopy(lines)
     while match is not True:
-        new_game = game(pervioius_game)
-        match = pervioius_game == new_game
+        new_game = game(previous_game, tolerance=tolerance, neigh_func=func)
+        match = previous_game == new_game
 
         if not match:
-            pervioius_game = deepcopy(new_game)
-
-    return get_count(new_game)
-
-
-def game_of_seats_tolerant(filename="data/day11.dat"):
-    with open(filename) as fdata:
-        lines = [convert2list(l) for l in fdata.read().splitlines()]
-
-    match = False
-    pervioius_game = deepcopy(lines)
-    while match is not True:
-        new_game = game(pervioius_game, 4, get_neighbors_tolerant)
-        match = pervioius_game == new_game
-
-        if not match:
-            pervioius_game = deepcopy(new_game)
+            previous_game = deepcopy(new_game)
 
     return get_count(new_game)
 
 
 assert game_of_seats(filename="data/day11-t.dat") == 37
-assert game_of_seats_tolerant("data/day11-t.dat") == 26
+assert game_of_seats(filename="data/day11-t.dat", tolerance=4, func=get_neighbors_tolerant) == 26
 
 game_of_seats()  # 2296
-game_of_seats_tolerant()  # 2089
+game_of_seats(tolerance=4, func=get_neighbors_tolerant)  # 2089
