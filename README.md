@@ -65,10 +65,21 @@ but asymptotically it _should_ be bellow `n`.
 Open questions:
  - What is the slope of the _Van Eck's sequence_ defined by `1, 2, 16, 19, 18, 0`? Is it different than the original one?
 
+## Day 24 - Axial coordinates
+> The tiles are all hexagonal; they need to be arranged in a hex grid with a very specific color pattern. [...] tiles 
+are hexagonal, every tile has six neighbors: east, southeast, southwest, west, northwest, and northeast. 
+These directions are given in your list, respectively, as `e`, `se`, `sw`, `w`, `nw`, and `ne`. 
+
+This was an interesting one, in the end it ended up as 
+[traditional Hexagonal Game of Life](https://github.com/matejker/game-of-life#hexagonal-live-demo), but the interesting 
+part was the notation of tile positions given be list of coordinates. In order to interpret it, I used reddit hint and 
+used _Axial coordinates_ [6] which _just worked_!
+![](axial_coordinates.png)
+
 ## References
 [1] Eric Wastl (2020), _Advent of Code 2020_, https://adventofcode.com/2020  
 [2] The OEIS Foundation (2010), _Van Eck's sequence_, https://oeis.org/A181391  
 [3] Numberphile (2019), _Don't Know (the Van Eck Sequence)_, https://www.youtube.com/watch?v=etMJxB-igrc  
 [4] Ben Lynn (?), _The Chinese Remainder Theorem_, https://crypto.stanford.edu/pbc/notes/numbertheory/crt.html
-[5] Wikipedia (?), _The Chinese Remainder Theorem # Search by sieving_, https://en.wikipedia.org/wiki/Chinese_remainder_theorem
-    
+[5] Wikipedia (?), _The Chinese Remainder Theorem # Search by sieving_, https://en.wikipedia.org/wiki/Chinese_remainder_theorem  
+[6] Amit Patel (2013), _Hexagonal Grids_, https://www.redblobgames.com/grids/hexagons/#coordinates-axial    
